@@ -29,7 +29,7 @@ nav{
     flex-wrap: wrap;   
 }
 .logo{
-    width: 140px;
+    width: 200px;
 
 }
 nav ul li{
@@ -59,7 +59,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 30px;
 }
 .header-text h1{
@@ -123,11 +123,11 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 11px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
+    color: #ff004f;
+    font-size: 16px;
 }
 .tab-contents{
     display: none;
