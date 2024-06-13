@@ -100,7 +100,37 @@
             <p id="profession" class="changing-text">Full Stack Developer</p>
             <h1>Hi, I'm <span>Dhanush</span> <br>From India</h1>
         </div>
+        <a href="#header" class="home-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <script>
+    // Get the home button element
+    const homeButton = document.querySelector('.home-btn');
+
+    // Function to toggle visibility of home button
+    function toggleHomeButton() {
+        // Get the current scroll position
+        const scrollPosition = window.scrollY;
+
+        // Get the height of the header section
+        const headerHeight = document.getElementById('header').offsetHeight;
+
+        // If scroll position is at or above header height, show the button; otherwise, hide it
+        if (scrollPosition >= headerHeight) {
+            homeButton.style.display = 'block';
+        } else {
+            homeButton.style.display = 'none';
+        }
+    }
+
+    // Event listener for scrolling
+    window.addEventListener('scroll', toggleHomeButton);
+
+    // Initial call to set button visibility based on initial scroll position
+    toggleHomeButton();
+</script>
     </div>
+    
 </div>
 
 <!-- Your existing HTML code continues here -->
